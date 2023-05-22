@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { Container, Dpto, Logo, TextoDpto, DetalhesProduto, AreaCarrossel  } from './App.styles';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <Dpto>
+        BELEZA
+      </Dpto>
+      <Logo>
+        JP Market
+      </Logo>
+      <TextoDpto>
+        O JP Market agora possui um espaço beleza<br></br>onde você encontra tudo para montar looks únicos.<br></br>
+        Venha Conhecer!
+      </TextoDpto>
+      <AreaCarrossel>IMAGEM</AreaCarrossel>
+      <DetalhesProduto>
+        <span>
+          GOOD GIRL DOT DRAMA EDP<br></br>
+          CAROLINA HERRERA
+        </span>
+        <span>
+          80 ML
+        </span>
+      </DetalhesProduto>
+    </Container>
   );
 }
 
