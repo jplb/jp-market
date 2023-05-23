@@ -1,4 +1,4 @@
-import { Container, Dpto, Logo, TextoDpto, DetalhesProduto, AreaCarrossel, OpcoesPgto, BlocoParcelas, BlocoJuros, CaixaAlta, CaixaBaixa, Legenda  } from './App.styles';
+import { Container, Dpto, Logo, TextoDpto, DetalhesProduto, AreaCarrossel, OpcoesPgto, BlocoParcelas, BlocoJuros, CaixaAlta, Legenda  } from './App.styles';
 
 function App() {
   return (
@@ -27,26 +27,27 @@ function App() {
         <BlocoParcelas>
           <BlocoJuros>
             <CaixaAlta>
-              10X
+              10X<sup><small>R$&nbsp;</small></sup>
             </CaixaAlta>
-            <CaixaBaixa>
-              R$
-            </CaixaBaixa>
             <CaixaAlta>
-              49,99
+              49<sup><small>&nbsp;,99</small></sup>
             </CaixaAlta>
           </BlocoJuros>
           <Legenda>
-            sem juros
+            sem juros<sup><small>1</small></sup>
           </Legenda>
           <BlocoJuros>
-          <CaixaAlta>
-              10X 38,07
+            <CaixaAlta>
+              15X<sup><small>R$&nbsp;</small></sup>
             </CaixaAlta>
-            <Legenda>
-            com juros
-          </Legenda>
+            <CaixaAlta>
+              49<sup><small>&nbsp;,99</small></sup>
+            </CaixaAlta>
           </BlocoJuros>
+          <Legenda>
+            com juros<sup><small>2</small></sup>
+          </Legenda>
+          
         </BlocoParcelas>
       </OpcoesPgto>
     </Container>

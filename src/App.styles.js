@@ -15,7 +15,8 @@ background: #ccc;
 `;
 
 export const Dpto = styled.div`
-font-family: Roboto;
+//font-family: 'Merienda', cursive; !!
+font-family: 'Tangerine', cursive;
 font-size: 42px;
 text-align: center;
 vertical-align: middle;
@@ -73,7 +74,8 @@ export const OpcoesPgto = styled.div`
 display: flex;
 flex-direction: row;
 width: 65%;
-// height: 100px;
+justify-content: space-between;
+align-items: end;
 border: solid 1px #000;
 border-left: none;
 border-right: none;
@@ -83,25 +85,30 @@ export const BlocoParcelas = styled.div`
 display: flex;
 flex-direction: column;
 width: 50%;
+margin-top: 4px;
 `;
 
 export const BlocoJuros = styled.div`
-
+display:flex;
+flex-direction: row;
 `;
 
 export const CaixaAlta = styled.span`
+display: flex;
 font-size: 28px;
 font-weight: 600;
+justify-content: center;
+align-items: start;
 `;
 
 export const CaixaBaixa = styled.span`
-font-size: 8.5px;
-text: 
+font-size: 12px;
 `;
 
 export const Legenda = styled.div`
-font-size: 7px;
-//falta display flex aqui!!!
+width: 100%;
+font-size: 16px;
+margin: -6px 0 4px 0;
 `;
 
 export const Unidades = styled.div`
