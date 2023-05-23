@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+{/* <style>
+  @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Dancing+Script&family=Herr+Von+Muellerhoff&family=Merienda&family=Tangerine:wght@700&display=swap');
+</style> */}
+
 export const Container = styled.div`
 display: flex;
 flex-direction: column;
