@@ -1,4 +1,4 @@
-import { Container, Dpto, Logo, TextoDpto, DetalhesProduto, AreaCarrossel  } from './App.styles';
+import { Container, Dpto, Logo, TextoDpto, DetalhesProduto, AreaCarrossel, Parcelamento  } from './App.styles';
 
 function App() {
   return (
@@ -23,6 +23,9 @@ function App() {
           80 ML
         </span>
       </DetalhesProduto>
+      <Parcelamento>
+
+      </Parcelamento>
     </Container>
   );
 }

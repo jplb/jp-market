@@ -12,7 +12,7 @@ background: #ccc;
 
 export const Dpto = styled.div`
 font-family: Roboto;
-font-size: 52px;
+font-size: 42px;
 text-align: center;
 vertical-align: middle;
 margin: 20px 0 28px 0;
@@ -24,25 +24,26 @@ font-family: Roboto;
 font-size: 28px;
 text-align: center;
 vertical-align: middle;
-margin: 4px 0 152px 0;
+margin: 4px 0 80px 0;
 background: #f00;
 `;
 
 export const TextoDpto = styled.div`
 display: flex;
-// width: 80%;
+justify-content: center;
+align-items: center;
+width: 80%;
+text-align: center; //ATENÇÃO!!!
 font-family: Roboto;
 font-size: 16px;
-text-align: center;
-vertical-align: middle;
 margin: 8px 0 20px 0;
 background: #0f0;
 `;
 
 export const AreaCarrossel = styled.div`
-height: 120px;
+height: 180px;
 font-family: Roboto;
-font-size: 16px;
+font-size: 18px;
 font-weight: 800;
 color: #fff;
 text-align: center;
@@ -54,20 +55,27 @@ background: #00f;
 export const DetalhesProduto = styled.div`
 display: flex;
 flex-direction: row;
+width: 65%;
 justify-content: space-between;
-align-items: center;
+align-items: end;
 font-family: Roboto;
-font-size: 14px;
-vertical-align: middle;
-margin: 8px 0 20px 0;
-background: #0f0;
+font-size: 13px;
+margin: 0 0 12px 0;
+background: #fff;
 `;
 
 
 export const Parcelamento = styled.div`
-
+display: flex;
+flex-direction: row;
+width: 65%;
+height: 100px;
+border: solid 1px #000;
+border-left: none;
+border-right: none;
 //faz os ajustes dos spans em linha pra ser mais rápido
 `;
+
 
 export const Unidades = styled.div`
 
