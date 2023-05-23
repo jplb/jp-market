@@ -1,4 +1,4 @@
-import { Container, Dpto, Logo, TextoDpto, DetalhesProduto, AreaCarrossel, Parcelamento  } from './App.styles';
+import { Container, Dpto, Logo, TextoDpto, DetalhesProduto, AreaCarrossel, OpcoesPgto, BlocoParcelas, BlocoJuros, CaixaAlta, CaixaBaixa, Legenda  } from './App.styles';
 
 function App() {
   return (
@@ -23,9 +23,32 @@ function App() {
           80 ML
         </span>
       </DetalhesProduto>
-      <Parcelamento>
-
-      </Parcelamento>
+      <OpcoesPgto>
+        <BlocoParcelas>
+          <BlocoJuros>
+            <CaixaAlta>
+              10X
+            </CaixaAlta>
+            <CaixaBaixa>
+              R$
+            </CaixaBaixa>
+            <CaixaAlta>
+              49,99
+            </CaixaAlta>
+          </BlocoJuros>
+          <Legenda>
+            sem juros
+          </Legenda>
+          <BlocoJuros>
+          <CaixaAlta>
+              10X 38,07
+            </CaixaAlta>
+            <Legenda>
+            com juros
+          </Legenda>
+          </BlocoJuros>
+        </BlocoParcelas>
+      </OpcoesPgto>
     </Container>
   );
 }

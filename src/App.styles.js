@@ -65,17 +65,40 @@ background: #fff;
 `;
 
 
-export const Parcelamento = styled.div`
+export const OpcoesPgto = styled.div`
 display: flex;
 flex-direction: row;
 width: 65%;
-height: 100px;
+// height: 100px;
 border: solid 1px #000;
 border-left: none;
 border-right: none;
 //faz os ajustes dos spans em linha pra ser mais rápido
 `;
+export const BlocoParcelas = styled.div`
+display: flex;
+flex-direction: column;
+width: 50%;
+`;
 
+export const BlocoJuros = styled.div`
+
+`;
+
+export const CaixaAlta = styled.span`
+font-size: 28px;
+font-weight: 600;
+`;
+
+export const CaixaBaixa = styled.span`
+font-size: 8.5px;
+text: 
+`;
+
+export const Legenda = styled.div`
+font-size: 7px;
+//falta display flex aqui!!!
+`;
 
 export const Unidades = styled.div`
 
