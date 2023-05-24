@@ -108,16 +108,61 @@ font-size: 16px;
 margin: -6px 0 4px 0;
 `;
 
-export const Unidades = styled.div`
+export const CondicoesPgto = styled.div`
+display: flex;
+flex-direction: column;
+width: 50%;
+`;
 
+export const ValorAVista = styled.div`
+display: flex;
+justify-content: start;
+align-items: start;
+font-size: 12px;
+`;
+
+export const DescontoPix = styled.div`
+display: flex;
+flex-direction: row;
+font-size: 12px;
+font-weight: 600;
+`;
+
+export const Bandeiras = styled.div`
+display: flex;
+font-size: 12px;
+
+`;
+
+export const Unidades = styled.div`
+display: flex;
+flex-direction: column;
+width: 80%;
+justify-content: start;
+align-items: center;
+border: solid 1px #000;
+margin-top: 80px;
+padding: 6px 0 72px 0;
 `;
 
 export const TituloUnidades = styled.div`
-
+display: flex:
+width: 80%;
+justify-content: center;
+align-items: center;
+font-size: 15px;
+border-bottom: solid 0.5px #000;
+padding: 16px 0;
+margin: 16px 0;
 `;
 
 export const LinkUnidade = styled.div`
-
+display: flex:
+width: 70%;
+justify-content: center;
+align-items: center;
+font-size: 15px;
+margin: 4px 0;
 `;
 
 export const Rodape = styled.div`
@@ -125,7 +170,8 @@ export const Rodape = styled.div`
 `;
 
 export const LogoRodape = styled.div`
-
+font-family: 'Merienda', cursive;
+font-size: 20px;
 `;
 
 export const TextoRodape = styled.div`
