@@ -166,14 +166,29 @@ margin: 4px 0;
 `;
 
 export const Rodape = styled.div`
-
+display: flex;
+flex-direction: column;
+width: 85%;
+justify-content: start;
+align-items: center;
+margin: 20px 0;
 `;
 
 export const LogoRodape = styled.div`
+display: flex;
+width: 100%;
+justify-content: center;
+align-items: center;
 font-family: 'Merienda', cursive;
 font-size: 20px;
+margin: 4px 0 16px 0;
 `;
 
 export const TextoRodape = styled.div`
-
+display: flex;
+// justify-content: start;
+// align-items: center;
+text-align: justify;
+width: 100%;
+font-size: 12px;
 `;
