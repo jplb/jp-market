@@ -74,11 +74,7 @@ function App() {
           Jay-P Market
         </LogoRodape>
         <TextoRodape>
-          Jay-P Market Limited Company Central de Atendimento - Consultas, informações e serviços <br></br>
-          transacionais: 12344-5678 &#40;capitais e regiões mwtropolitanas&#41; e 0800 123<br></br>
-          4567 &#40;demais localidades&#41;, atendimento de segunda a sábado, das 8h às 22h,<br></br>
-          exceto feriados. SAC Jay-P - Reclamações, cancelamentos e informações<br></br>
-          gerais: 0800 987 6543. Deficiência auditiva ou de fala: 0800 456 1237 &#40;atendimento 24h, 7 dias por semana&#41;. Ouvidoria - Demandas não solucionadas pelos demais Canais de Atendimento: 0800 321 8975 &#40;atendimento de segunda a sexta-feira, das 8h às 18h, exceto feriados&#41;.
+          Jay-P Market Limited Company Central de Atendimento - Consultas, informações e serviços transacionais: 12344-5678 &#40;capitais e regiões mwtropolitanas&#41; e 0800 123 4567 &#40;demais localidades&#41;, atendimento de segunda a sábado, das 8h às 22h exceto feriados. SAC Jay-P - Reclamações, cancelamentos e informações gerais: 0800 987 6543. Deficiência auditiva ou de fala: 0800 456 1237 &#40;atendimento 24h, 7 dias por semana&#41;. Ouvidoria - Demandas não solucionadas pelos demais Canais de Atendimento: 0800 321 8975 &#40;atendimento de segunda a sexta-feira, das 8h às 18h, exceto feriados&#41;.
         </TextoRodape>
       </Rodape>
     </Container>
