@@ -1,6 +1,31 @@
-import { Container, Dpto, Logo, TextoDpto, DetalhesProduto, AreaCarrossel, OpcoesPgto, BlocoParcelas, BlocoJuros, CaixaAlta, Legenda, CondicoesPgto, ValorAVista, DescontoPix, Bandeiras, Unidades, TituloUnidades, LinkUnidade, Rodape, LogoRodape, TextoRodape } from './App.styles';
+import { Container, Dpto, Logo, TextoDpto, DetalhesProduto, AreaCarrossel, Produto, ImagemProduto,  OpcoesPgto, BlocoParcelas, BlocoJuros, CaixaAlta, Legenda, CondicoesPgto, ValorAVista, DescontoPix, Bandeiras, Unidades, TituloUnidades, LinkUnidade, Rodape, LogoRodape, TextoRodape } from './App.styles';
+
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+
+import img1 from './assets/img/base-da-virginia.png';
+
+import img2 from './assets/img/bepantriz-derma.png';
+
+import img3 from './assets/img/nivea-pele-negra.jpg';
+
+import img4 from './assets/img/perfume-dot-drama.png';
+
+import img5 from './assets/img/perfume-phebo-brisa.png';
+
+import img6 from './assets/img/ps-facial-neutrogena.png';
 
 function App() {
+
+  // const produtos = [
+  //   {
+  //     descricao: '',
+  //     complemento: '',
+  //     massaVol: '',
+  //     precoSemJuros: ''
+  //   };
+  // ];
+
   return (
     <Container>
       <Dpto>
@@ -13,7 +38,22 @@ function App() {
         O JP Market agora possui um espaço beleza<br></br>onde você encontra tudo para montar looks únicos.<br></br>
         Venha Conhecer!
       </TextoDpto>
-      <AreaCarrossel>IMAGEM</AreaCarrossel>
+      <AreaCarrossel>
+        <Carousel>
+          <Produto>
+              <img style={{width: '411px', width: '180px', objectFit: 'contain'}} src={img4} />
+              <p className="legend">Legend 1</p>
+          </Produto>
+          <Produto>
+              <img style={{width: '411px', width: '180px', objectFit: 'contain'}} src={img2} />
+              <p className="legend">Legend 2</p>
+          </Produto>
+          {/* <div>
+              <img src='./assets/img/nivea-pele-negra.png' />
+              <p className="legend">Legend 3</p>
+            </div> */}
+        </Carousel>
+      </AreaCarrossel>
       <DetalhesProduto>
         <span>
           GOOD GIRL DOT DRAMA EDP<br></br>

@@ -46,15 +46,38 @@ background: #0f0;
 `;
 
 export const AreaCarrossel = styled.div`
+display: flex;
+flex-direction: row;
+width: 100%;
 height: 180px;
 font-family: Roboto;
 font-size: 18px;
 font-weight: 800;
 color: #fff;
 text-align: center;
-vertical-align: middle;
+//vertical-align: middle;
 margin: 16px 0 16px;
 background: #00f;
+`;
+
+export const Produto = styled.div`
+display: flex;
+width: 100%;
+height: 180px;
+justify-content: center;
+align-items: center;
+`;
+
+export const ImagemProduto = styled.img`
+display: flex;
+
+//problema com distorção da imagem!!!
+//mas numa situação real, eu, como dev
+//seria responsável por conseguir formatar
+// imagens de diferentes produtos com
+//tamanhos iguais? ou um designer já me
+//forneceria as imagens num tamanho perfeito?
+//acho que a 2a ocasião é a mais provável...
 `;
 
 export const DetalhesProduto = styled.div`
