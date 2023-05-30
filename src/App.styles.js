@@ -1,36 +1,43 @@
 import styled from 'styled-components';
+// import bgd1 from './assets/img/bgd/fundo-flores-roxas.png';
 
-{/* <style>
-  @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Dancing+Script&family=Herr+Von+Muellerhoff&family=Merienda&family=Tangerine:wght@700&display=swap');
-</style> */}
+// background: url(${bgd2}) no-repeat;
+// background-size: cover;
+
 
 export const Container = styled.div`
 display: flex;
 flex-direction: column;
+max-width: 1000px;
+min-width: 320px;
 width: 100%;
 height: 100%;
 justify-content: center;
 align-items: center;
-background: #ccc;
+color: #6c8094;
 `;
 
 export const Dpto = styled.div`
-//font-family: 'Merienda', cursive; !!
-font-family: 'Tangerine', cursive;
-font-size: 42px;
+width: 100%;
+min-width: 320px;
+max-width: 1000px;
+min-height: 96px;
+font-family: 'Amatic SC', cursive;
+font-size: 96px;
+font-weight: 700;
+color: #9400d3;
 text-align: center;
 vertical-align: middle;
 margin: 20px 0 28px 0;
-background: #fff;
 `;
 
 export const Logo = styled.div`
-font-family: Roboto;
-font-size: 28px;
+font-family: 'Herr Von Muellerhoff', cursive;
+font-size: 36px;
+font-weight: 600;
 text-align: center;
 vertical-align: middle;
 margin: 4px 0 80px 0;
-background: #f00;
 `;
 
 export const TextoDpto = styled.div`
@@ -42,11 +49,12 @@ text-align: center; //ATENÇÃO!!!
 font-family: Roboto;
 font-size: 16px;
 margin: 8px 0 20px 0;
-background: #0f0;
 `;
 
 export const AreaCarrossel = styled.div`
 display: flex;
+justify-content: center;
+align-items: center;
 flex-direction: row;
 width: 100%;
 height: 180px;
@@ -57,7 +65,6 @@ color: #fff;
 text-align: center;
 //vertical-align: middle;
 margin: 16px 0 16px;
-background: #00f;
 `;
 
 export const Produto = styled.div`
@@ -89,7 +96,6 @@ align-items: end;
 font-family: Roboto;
 font-size: 13px;
 margin: 0 0 12px 0;
-background: #fff;
 `;
 
 

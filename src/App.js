@@ -17,37 +17,98 @@ import img6 from './assets/img/ps-facial-neutrogena.png';
 
 function App() {
 
-  // const produtos = [
-  //   {
-  //     descricao: '',
-  //     complemento: '',
-  //     massaVol: '',
-  //     precoSemJuros: ''
-  //   };
-  // ];
+  const produtos = [
+    {
+      foto: img1,
+      descricao: 'Wepink Beauty',
+      complemento: 'Base Líquida Premium',
+      massaVol: '45 mL',
+      precoVista: '199,90',
+      precoParcela: '19,99',
+      precoJuros: '16,99',
+      parcela: '10',
+      parcelaJuros: '15',
+    },
+    {
+      foto: img2,
+      descricao: 'Bepantriz Derma',
+      complemento: 'Regenerador Labial',
+      massaVol: '7,5 mL',
+      precoVista: '21,90',
+      precoParcela: null,
+      precoJuros: null,
+      parcela: null,
+      parcelaJuros: null,
+    },
+    {
+      foto: img3,
+      descricao: 'Nivea Beleza Radiante',
+      complemento: 'Creme para Pele Negra',
+      massaVol: '400 mL',
+      precoVista: '24,90',
+      precoParcela: null,
+      precoJuros: null,
+      parcela: null,
+      parcelaJuros: null,
+    },
+    {
+      foto: img4,
+      descricao: 'Good Girl Dot Drama EDP',
+      complemento: 'Carolina Herrera',
+      massaVol: '80 mL',
+      precoVista: '499,90',
+      precoParcela: '49,99',
+      precoJuros: '38,07',
+      parcela: '10',
+      parcelaJuros: '15',
+    },
+    {
+      foto: img5,
+      descricao: 'Phebo Brisa',
+      complemento: 'Eau de Parfum',
+      massaVol: '100 mL',
+      precoVista: '239,90',
+      precoParcela: '23,99',
+      precoJuros: '21,09',
+      parcela: '10',
+      parcelaJuros: '15',
+    },
+    {
+      foto: img6,
+      descricao: 'Protetor Solar Neutrogena',
+      complemento: 'Facial Sem Cor FPS 70',
+      massaVol: '40 g',
+      precoVista: '239,90',
+      precoParcela: '23,99',
+      precoJuros: '21,09',
+      parcela: '10',
+      parcelaJuros: '15',
+    },
+  ];
 
   return (
     <Container>
       <Dpto>
-        BELEZA
+        Beleza
       </Dpto>
       <Logo>
-        JP Market
+        Jay-P&nbsp;&nbsp; Market
       </Logo>
       <TextoDpto>
-        O JP Market agora possui um espaço beleza<br></br>onde você encontra tudo para montar looks únicos.<br></br>
+        O Jay-P Market agora possui um espaço beleza onde você encontra tudo para montar looks únicos.<br></br>
         Venha Conhecer!
       </TextoDpto>
+      {/* O ideal seria utilizar algo semelhante ao FlatList do React Native para renderizar apenas os elementos necessários no Carrossel quando solicitados*/}
       <AreaCarrossel>
-        <Carousel>
+        <Carousel showThumbs={false}>
           <Produto>
-              <img style={{width: '411px', width: '180px', objectFit: 'contain'}} src={img4} />
-              <p className="legend">Legend 1</p>
+            {/* CUIDADO!!! As dimensões definidas para a imagem dentro do componente Carrossel podem quebrar (e feio) seu app */}
+              <img style={{width: '100%', height: '180px', objectFit: 'contain'}} src={img4} />
           </Produto>
-          <Produto>
-              <img style={{width: '411px', width: '180px', objectFit: 'contain'}} src={img2} />
+          {/* <Produto>
+              <img style={{width: '380px', height: '180px', objectFit: 'contain'}} src={img2} />
               <p className="legend">Legend 2</p>
-          </Produto>
+          </Produto> */}
           {/* <div>
               <img src='./assets/img/nivea-pele-negra.png' />
               <p className="legend">Legend 3</p>
@@ -56,11 +117,11 @@ function App() {
       </AreaCarrossel>
       <DetalhesProduto>
         <span>
-          GOOD GIRL DOT DRAMA EDP<br></br>
-          CAROLINA HERRERA
+          Good Gilr Dot Drama EDP<br></br>
+          Carolina Herrera
         </span>
         <span>
-          80 ML
+          80 mL
         </span>
       </DetalhesProduto>
       <OpcoesPgto>
