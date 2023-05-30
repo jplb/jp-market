@@ -1,4 +1,4 @@
-import { Container, Dpto, Logo, TextoDpto, DetalhesProduto, AreaCarrossel, Produto, ImagemProduto,  OpcoesPgto, BlocoParcelas, BlocoJuros, CaixaAlta, Legenda, CondicoesPgto, ValorAVista, DescontoPix, Bandeiras, Unidades, TituloUnidades, LinkUnidade, Rodape, LogoRodape, TextoRodape } from './App.styles';
+import { Container, Dpto, Logo, Decoracao1, Decoracao2, TextoDpto, DetalhesProduto, AreaCarrossel, Produto, ImagemProduto,  OpcoesPgto, BlocoParcelas, BlocoJuros, CaixaAlta, Legenda, CondicoesPgto, ValorAVista, DescontoPix, Bandeiras, Unidades, TituloUnidades, LinkUnidade, Rodape, LogoRodape, TextoRodape, PixIcon, MastercardIcon, VisaIcon } from './App.styles';
 
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
@@ -20,9 +20,9 @@ function App() {
   const produtos = [
     {
       foto: img1,
-      descricao: 'Wepink Beauty',
-      complemento: 'Base Líquida Premium',
-      massaVol: '45 mL',
+      descricao: 'WEPINK BEAUTY',
+      complemento: 'BASE LÍQUIDA PREMIUM',
+      massaVol: '45 ML',
       precoVista: '199,90',
       precoParcela: '19,99',
       precoJuros: '16,99',
@@ -31,9 +31,9 @@ function App() {
     },
     {
       foto: img2,
-      descricao: 'Bepantriz Derma',
-      complemento: 'Regenerador Labial',
-      massaVol: '7,5 mL',
+      descricao: 'BEPANTRIZ DERMA',
+      complemento: 'REGENERADOR LABIAL',
+      massaVol: '7,5 ML',
       precoVista: '21,90',
       precoParcela: null,
       precoJuros: null,
@@ -42,9 +42,9 @@ function App() {
     },
     {
       foto: img3,
-      descricao: 'Nivea Beleza Radiante',
-      complemento: 'Creme para Pele Negra',
-      massaVol: '400 mL',
+      descricao: 'NIVEA BELEZA RADIANTE',
+      complemento: 'PELE NEGRA',
+      massaVol: '400 ML',
       precoVista: '24,90',
       precoParcela: null,
       precoJuros: null,
@@ -53,9 +53,9 @@ function App() {
     },
     {
       foto: img4,
-      descricao: 'Good Girl Dot Drama EDP',
-      complemento: 'Carolina Herrera',
-      massaVol: '80 mL',
+      descricao: 'GOOD GIRL DOT DRAMA EDP',
+      complemento: 'CAROLINA HERRERA',
+      massaVol: '80 ML',
       precoVista: '499,90',
       precoParcela: '49,99',
       precoJuros: '38,07',
@@ -64,9 +64,9 @@ function App() {
     },
     {
       foto: img5,
-      descricao: 'Phebo Brisa',
-      complemento: 'Eau de Parfum',
-      massaVol: '100 mL',
+      descricao: 'PHEBO BRISA',
+      complemento: 'EAU DE PARFUM',
+      massaVol: '100 ML',
       precoVista: '239,90',
       precoParcela: '23,99',
       precoJuros: '21,09',
@@ -75,9 +75,9 @@ function App() {
     },
     {
       foto: img6,
-      descricao: 'Protetor Solar Neutrogena',
-      complemento: 'Facial Sem Cor FPS 70',
-      massaVol: '40 g',
+      descricao: 'PROTETOR SOLAR NEUTROGENA',
+      complemento: 'FACIAL SEM COR 70 FPS',
+      massaVol: '40 G',
       precoVista: '239,90',
       precoParcela: '23,99',
       precoJuros: '21,09',
@@ -94,44 +94,38 @@ function App() {
       <Logo>
         Jay-P&nbsp;&nbsp; Market
       </Logo>
+      <Decoracao1 />
       <TextoDpto>
         O Jay-P Market agora possui um espaço beleza onde você encontra tudo para montar looks únicos.<br></br>
         Venha Conhecer!
       </TextoDpto>
-      {/* O ideal seria utilizar algo semelhante ao FlatList do React Native para renderizar apenas os elementos necessários no Carrossel quando solicitados*/}
       <AreaCarrossel>
-        <Carousel showThumbs={false}>
+        <Carousel showThumbs={false} showArrows >
           <Produto>
-            {/* CUIDADO!!! As dimensões definidas para a imagem dentro do componente Carrossel podem quebrar (e feio) seu app */}
               <img style={{width: '100%', height: '180px', objectFit: 'contain'}} src={img4} />
           </Produto>
-          {/* <Produto>
-              <img style={{width: '380px', height: '180px', objectFit: 'contain'}} src={img2} />
-              <p className="legend">Legend 2</p>
-          </Produto> */}
-          {/* <div>
-              <img src='./assets/img/nivea-pele-negra.png' />
-              <p className="legend">Legend 3</p>
-            </div> */}
+          <Produto>
+          <img style={{width: '100%', height: '180px', objectFit: 'contain'}} src={img4} />
+          </Produto>
         </Carousel>
       </AreaCarrossel>
       <DetalhesProduto>
         <span>
-          Good Gilr Dot Drama EDP<br></br>
-          Carolina Herrera
+          GOOD GIRL DOT DRAMA EDP<br></br>
+          CAROLINA HERRERA
         </span>
         <span>
-          80 mL
+          80 ML
         </span>
       </DetalhesProduto>
       <OpcoesPgto>
         <BlocoParcelas>
           <BlocoJuros>
             <CaixaAlta>
-              10X<sup><small>R$&nbsp;</small></sup>
+              10X&nbsp;<sup><small>R$</small></sup>
             </CaixaAlta>
             <CaixaAlta>
-              49<sup><small>&nbsp;,99</small></sup>
+              49<sup><small>,99</small></sup>
             </CaixaAlta>
           </BlocoJuros>
           <Legenda>
@@ -139,10 +133,10 @@ function App() {
           </Legenda>
           <BlocoJuros>
             <CaixaAlta>
-              15X<sup><small>R$&nbsp;</small></sup>
+              15X&nbsp;<sup><small>R$</small></sup>
             </CaixaAlta>
             <CaixaAlta>
-              49<sup><small>&nbsp;,99</small></sup>
+              49<sup><small>,99</small></sup>
             </CaixaAlta>
           </BlocoJuros>
           <Legenda>
@@ -151,16 +145,19 @@ function App() {
         </BlocoParcelas>
         <CondicoesPgto>
           <ValorAVista>
-            ou R$499,90 à vista
+            R$499,90 à vista
           </ValorAVista>
           <DescontoPix>
-           Desconto de 5% *Ícone Pix*
+           5% Off no Pix
           </DescontoPix>
           <Bandeiras>
-            *Ícones das Bandeiras*
+            {/* <PixIcon />
+            <MastercardIcon />
+            <VisaIcon /> */}
           </Bandeiras>
         </CondicoesPgto>
       </OpcoesPgto>
+      <Decoracao2 />
       <Unidades>
         <TituloUnidades>
           Unidades Jay-P Market
@@ -172,7 +169,7 @@ function App() {
       </Unidades>
       <Rodape>
         <LogoRodape>
-          Jay-P Market
+          Jay-P&nbsp;&nbsp; Market
         </LogoRodape>
         <TextoRodape>
           Jay-P Market Limited Company Central de Atendimento - Consultas, informações e serviços transacionais: 12344-5678 &#40;capitais e regiões mwtropolitanas&#41; e 0800 123 4567 &#40;demais localidades&#41;, atendimento de segunda a sábado, das 8h às 22h exceto feriados. SAC Jay-P - Reclamações, cancelamentos e informações gerais: 0800 987 6543. Deficiência auditiva ou de fala: 0800 456 1237 &#40;atendimento 24h, 7 dias por semana&#41;. Ouvidoria - Demandas não solucionadas pelos demais Canais de Atendimento: 0800 321 8975 &#40;atendimento de segunda a sexta-feira, das 8h às 18h, exceto feriados&#41;.
