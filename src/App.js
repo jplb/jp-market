@@ -1,4 +1,6 @@
-import { Container, Dpto, Logo, Decoracao1, Decoracao2, TextoDpto, DetalhesProduto, Carrossel, Produto, ImgProduto,  OpcoesPgto, BlocoParcelas, BlocoJuros, CaixaAlta, Legenda, CondicoesPgto, ValorAVista, DescontoPix, Bandeiras, Unidades, TituloUnidades, LinkUnidade, Rodape, LogoRodape, TextoRodape, PixIcon, PrevBtn, NextBtn, MastercardIcon, VisaIcon } from './App.styles';
+import {useRef} from 'react';
+
+import { Container, Dpto, Logo, Decoracao1, Decoracao2, TextoDpto, DetalhesProduto, Carrossel, Produto, ImgProduto,  OpcoesPgto, BlocoParcelas, BlocoJuros, CaixaAlta, Legenda, CondicoesPgto, ValorAVista, DescontoPix, Bandeiras, Unidades, TituloUnidades, LinkUnidade, Rodape, LogoRodape, TextoRodape, PixIcon, BtnArea, PrevBtn, NextBtn, MastercardIcon, VisaIcon } from './App.styles';
 
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
@@ -15,7 +17,25 @@ import img5 from './assets/img/perfume-phebo-brisa.png';
 
 import img6 from './assets/img/ps-facial-neutrogena.png';
 
+import rightArrow from './assets/icon/double-right-arrow-icon.png';
+
+import leftArrow from './assets/icon/double-left-arrow-icon.png';
+
 function App() {
+
+  const carrossel = useRef(null);
+
+  const handleLeftClick = (event) => {
+    event.preventDefault();
+    console.log(carrossel.current.offsetWidth);
+    carrossel.current.scrollLeft -= carrossel.current.offsetWidth;
+  };
+
+  const handleRightClick = (event) => {
+    event.preventDefault();
+    console.log(carrossel.current.offsetWidth);
+    carrossel.current.scrollLeft += carrossel.current.offsetWidth;
+  };
 
   const produtos = [
     {
@@ -117,8 +137,7 @@ function App() {
         O Jay-P Market agora possui um espaço beleza onde você encontra tudo para montar looks únicos.<br></br>
         Venha Conhecer!
       </TextoDpto>
-      <Carrossel>
-        <PrevBtn />
+      <Carrossel ref={carrossel}>
         {
           produtos.map((item) => {
             return(
@@ -176,18 +195,11 @@ function App() {
             );
           })
         }
-        <NextBtn />
-
-        {/* <Carousel showThumbs={false} showArrows >
-          <Produto>
-              <img style={{width: '100%', height: '180px', objectFit: 'contain'}} src={img4} />
-          </Produto>
-          <Produto>
-          <img style={{width: '100%', height: '180px', objectFit: 'contain'}} src={img4} />
-          </Produto>
-        </Carousel> */}
       </Carrossel>
-     
+      <BtnArea>
+          <PrevBtn onClick={handleLeftClick}><img style={{height: '12px'}} src={leftArrow}/></PrevBtn>
+          <NextBtn onClick={handleRightClick}><img style={{height: '12px'}} src={rightArrow}/></NextBtn>
+        </BtnArea>
       <Decoracao2 />
       <Unidades>
         <TituloUnidades>

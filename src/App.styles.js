@@ -93,42 +93,58 @@ export const Carrossel = styled.div`
 display: flex;
 flex-direction: row;
 align-items: center;
-width: 100%;
-margin: 16px 0 16px;
-overflow-x: hidden;
+width: 80%;
+margin: auto;
+overflow-x: scroll;
+`;
+
+export const BtnArea = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 80%;
+height: 18px;
+margin-top: 8px;
 `;
 
 export const PrevBtn = styled.button`
 display: flex;
-width: 8.5%;
-height: 64px;
-background: #fff;
-border: solid 1px #000;
+width: 49.5%;
+height: 18px;
+justify-content: center;
+align-items: center;
+border: none;
+border-radius: 5px;
 margin-bottom: 60px;
+background: #91a0af;
+cursor: pointer;
 `;
 
 export const NextBtn = styled.button`
 display: flex;
-width: 8.5%;
-height: 64px;
-background: #fff;
-border: solid 1px #000;
+width: 49.5%;
+height: 18px;
+justify-content: center;
+align-items: center;
+border: none;
+border-radius: 5px;
 margin-bottom: 60px;
+background: #91a0af;
+cursor: pointer;
 `;
 
 export const Produto = styled.div`
 display: flex;
 flex-direction: column;
-width: 85%;
-//height: 180px;
+width: 300px;
 justify-content: center;
 align-items: center;
 `;
 
 export const ImgProduto = styled.img`
 display: flex;
-width: 100%;
-height: 240px;
+width: 300px;
+height: 220px;
 object-fit: contain;
 `;
 
