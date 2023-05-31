@@ -89,46 +89,53 @@ margin: 8px 0 20px 0;
 color: #6c8094;
 `;
 
-export const AreaCarrossel = styled.div`
+export const Carrossel = styled.div`
 display: flex;
-justify-content: center;
-align-items: center;
 flex-direction: row;
+align-items: center;
 width: 100%;
-height: 180px;
-font-family: Roboto;
-font-size: 18px;
-font-weight: 800;
-color: #fff;
-text-align: center;
-//vertical-align: middle;
 margin: 16px 0 16px;
+overflow-x: hidden;
+`;
+
+export const PrevBtn = styled.button`
+display: flex;
+width: 8.5%;
+height: 64px;
+background: #fff;
+border: solid 1px #000;
+margin-bottom: 60px;
+`;
+
+export const NextBtn = styled.button`
+display: flex;
+width: 8.5%;
+height: 64px;
+background: #fff;
+border: solid 1px #000;
+margin-bottom: 60px;
 `;
 
 export const Produto = styled.div`
 display: flex;
-width: 100%;
-height: 180px;
+flex-direction: column;
+width: 85%;
+//height: 180px;
 justify-content: center;
 align-items: center;
 `;
 
-export const ImagemProduto = styled.img`
+export const ImgProduto = styled.img`
 display: flex;
-
-//problema com distorção da imagem!!!
-//mas numa situação real, eu, como dev
-//seria responsável por conseguir formatar
-// imagens de diferentes produtos com
-//tamanhos iguais? ou um designer já me
-//forneceria as imagens num tamanho perfeito?
-//acho que a 2a ocasião é a mais provável...
+width: 100%;
+height: 240px;
+object-fit: contain;
 `;
 
 export const DetalhesProduto = styled.div`
 display: flex;
 flex-direction: row;
-width: 65%;
+width: 80%;
 justify-content: space-between;
 align-items: end;
 font-family: Roboto;
@@ -140,7 +147,7 @@ margin: 0 0 12px 0;
 export const OpcoesPgto = styled.div`
 display: flex;
 flex-direction: row;
-width: 65%;
+width: 80%;
 justify-content: space-between;
 align-items: start;
 border: solid 1px #000;
@@ -222,6 +229,7 @@ justify-content: center;
 align-items: center;
 font-size: 13px;
 font-weight: 500;
+color: #6c8094;
 border-bottom: solid 0.5px #9400d3f7;
 padding: 16px 0;
 margin: 16px 0;
@@ -234,6 +242,7 @@ justify-content: center;
 align-items: center;
 font-size: 13px;
 font-weight: 500;
+color: #6c8094;
 margin: 4px 0;
 `;
 
