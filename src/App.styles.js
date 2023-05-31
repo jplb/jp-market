@@ -1,33 +1,79 @@
 import styled from 'styled-components';
 
+import dt1 from './assets/img/others/detalhe-fundo.png';
+import Pix from './assets/icon/pix.svg';
+import Mastercard from './assets/icon/cc-mastercard.svg';
+import Visa from './assets/icon/cc-visa.svg';
+// import bgd1 from './assets/img/bgd/fundo-flores-roxas.png';
+
+// background: url(${bgd2}) no-repeat;
+// background-size: cover;
+
+// export const PixIcon = styled(Pix)`
+// font-size: 16px;
+// `;
+
+// export const MastercardIcon = styled(Mastercard)`
+// font-size: 16px;
+// `;
+// export const VisaIcon = styled(Visa)`
+// font-size: 16px;
+// `;
 
 export const Container = styled.div`
 display: flex;
 flex-direction: column;
+max-width: 1000px;
+min-width: 320px;
 width: 100%;
 height: 100%;
 justify-content: center;
 align-items: center;
-background: #ccc;
+font-family: 'Courier New';
+color: #000;
+margin: auto;
+border: solid 0.5px #ccc
 `;
 
 export const Dpto = styled.div`
-//font-family: 'Merienda', cursive; !!
-font-family: 'Tangerine', cursive;
-font-size: 42px;
+width: 100%;
+min-width: 320px;
+max-width: 1000px;
+min-height: 96px;
+font-family: 'Amatic SC', cursive;
+font-size: 96px;
+font-weight: 700;
+color: #9400d3f7;
 text-align: center;
 vertical-align: middle;
 margin: 20px 0 28px 0;
-background: #fff;
 `;
 
 export const Logo = styled.div`
-font-family: Roboto;
-font-size: 28px;
+font-family: 'Herr Von Muellerhoff', cursive;
+font-size: 36px;
+font-weight: 600;
 text-align: center;
 vertical-align: middle;
-margin: 4px 0 80px 0;
-background: #f00;
+color: #6c8094;
+`;
+
+export const Decoracao1 = styled.div`
+width: 85%;
+height: 16px;
+background: url(${dt1});
+background-size: cover;
+background-position: center;
+margin: 28px 0 30px 0;
+`;
+
+export const Decoracao2 = styled.div`
+width: 85%;
+height: 16px;
+background: url(${dt1});
+background-size: cover;
+background-position: center;
+margin: 44px 0 0 0;
 `;
 
 export const TextoDpto = styled.div`
@@ -36,53 +82,100 @@ justify-content: center;
 align-items: center;
 width: 80%;
 text-align: center; //ATENÇÃO!!!
-font-family: Roboto;
-font-size: 16px;
+font-family: 'Courier New';
+font-size: 14px;
+font-weight: 500;
 margin: 8px 0 20px 0;
-background: #0f0;
+color: #6c8094;
 `;
 
-export const AreaCarrossel = styled.div`
-height: 180px;
-font-family: Roboto;
-font-size: 18px;
-font-weight: 800;
-color: #fff;
-text-align: center;
-vertical-align: middle;
-margin: 16px 0 16px;
-background: #00f;
+export const Carrossel = styled.div`
+display: flex;
+flex-direction: row;
+align-items: center;
+width: 80%;
+margin: auto;
+overflow-x: scroll;
+`;
+
+export const BtnArea = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 80%;
+height: 18px;
+margin-top: 8px;
+`;
+
+export const PrevBtn = styled.button`
+display: flex;
+width: 49.5%;
+height: 18px;
+justify-content: center;
+align-items: center;
+border: none;
+border-radius: 5px;
+margin-bottom: 60px;
+background: #91a0af;
+cursor: pointer;
+`;
+
+export const NextBtn = styled.button`
+display: flex;
+width: 49.5%;
+height: 18px;
+justify-content: center;
+align-items: center;
+border: none;
+border-radius: 5px;
+margin-bottom: 60px;
+background: #91a0af;
+cursor: pointer;
+`;
+
+export const Produto = styled.div`
+display: flex;
+flex-direction: column;
+width: 300px;
+justify-content: center;
+align-items: center;
+`;
+
+export const ImgProduto = styled.img`
+display: flex;
+width: 300px;
+height: 220px;
+object-fit: contain;
 `;
 
 export const DetalhesProduto = styled.div`
 display: flex;
 flex-direction: row;
-width: 65%;
+width: 80%;
 justify-content: space-between;
 align-items: end;
 font-family: Roboto;
 font-size: 13px;
 margin: 0 0 12px 0;
-background: #fff;
 `;
 
 
 export const OpcoesPgto = styled.div`
 display: flex;
 flex-direction: row;
-width: 65%;
+width: 80%;
 justify-content: space-between;
-align-items: end;
+align-items: start;
 border: solid 1px #000;
 border-left: none;
 border-right: none;
-//faz os ajustes dos spans em linha pra ser mais rápido
+padding-top: 4px;
+
 `;
 export const BlocoParcelas = styled.div`
 display: flex;
 flex-direction: column;
 width: 50%;
-margin-top: 4px;
 `;
 
 export const BlocoJuros = styled.div`
@@ -92,7 +185,7 @@ flex-direction: row;
 
 export const CaixaAlta = styled.span`
 display: flex;
-font-size: 28px;
+font-size: 22px;
 font-weight: 600;
 justify-content: center;
 align-items: start;
@@ -104,7 +197,7 @@ font-size: 12px;
 
 export const Legenda = styled.div`
 width: 100%;
-font-size: 16px;
+font-size: 10px;
 margin: -6px 0 4px 0;
 `;
 
@@ -112,19 +205,19 @@ export const CondicoesPgto = styled.div`
 display: flex;
 flex-direction: column;
 width: 50%;
+justify-content: start;
+align-items: end;
 `;
 
 export const ValorAVista = styled.div`
 display: flex;
-justify-content: start;
-align-items: start;
-font-size: 12px;
+font-size: 10px;
 `;
 
 export const DescontoPix = styled.div`
 display: flex;
 flex-direction: row;
-font-size: 12px;
+font-size: 10px;
 font-weight: 600;
 `;
 
@@ -140,8 +233,8 @@ flex-direction: column;
 width: 80%;
 justify-content: start;
 align-items: center;
-border: solid 1px #000;
-margin-top: 80px;
+border: solid 2px #9400d3f7;
+margin-top: 50px;
 padding: 6px 0 72px 0;
 `;
 
@@ -150,8 +243,10 @@ display: flex:
 width: 80%;
 justify-content: center;
 align-items: center;
-font-size: 15px;
-border-bottom: solid 0.5px #000;
+font-size: 13px;
+font-weight: 500;
+color: #6c8094;
+border-bottom: solid 0.5px #9400d3f7;
 padding: 16px 0;
 margin: 16px 0;
 `;
@@ -161,7 +256,9 @@ display: flex:
 width: 70%;
 justify-content: center;
 align-items: center;
-font-size: 15px;
+font-size: 13px;
+font-weight: 500;
+color: #6c8094;
 margin: 4px 0;
 `;
 
@@ -179,16 +276,17 @@ display: flex;
 width: 100%;
 justify-content: center;
 align-items: center;
-font-family: 'Merienda', cursive;
-font-size: 20px;
+font-family: 'Herr Von Muellerhoff', cursive;
+font-size: 24px;
+font-weight: 600;
 margin: 4px 0 16px 0;
+color: #000;
 `;
 
 export const TextoRodape = styled.div`
 display: flex;
-// justify-content: start;
-// align-items: center;
 text-align: justify;
 width: 100%;
-font-size: 12px;
+font-size: 10px;
+color: #6c8094;
 `;
