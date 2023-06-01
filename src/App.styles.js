@@ -156,7 +156,7 @@ justify-content: space-between;
 align-items: end;
 font-family: Roboto;
 font-size: 13px;
-margin: 0 0 12px 0;
+margin: 18px 0 12px 0;
 `;
 
 
