@@ -1,6 +1,6 @@
 import {useRef} from 'react';
 
-import { Container, Dpto, Logo, Decoracao1, Decoracao2, TextoDpto, DetalhesProduto, Carrossel, Produto, ImgProduto,  OpcoesPgto, BlocoParcelas, BlocoJuros, CaixaAlta, Legenda, CondicoesPgto, ValorAVista, DescontoPix, Bandeiras, Unidades, TituloUnidades, LinkUnidade, Rodape, LogoRodape, TextoRodape, PixIcon, BtnArea, PrevBtn, NextBtn, MastercardIcon, VisaIcon } from './App.styles';
+import { Container, Dpto, Logo, Decoracao1, Decoracao2, TextoDpto, DetalhesProduto, Carrossel, Produto, ImgProduto,  OpcoesPgto, BlocoParcelas, BlocoJuros, CaixaAlta, Legenda, CondicoesPgto, ValorAVista, DescontoPix, Bandeiras, Unidades, TituloUnidades, LinkUnidade, Rodape, LogoRodape, TextoRodape, BtnArea, PrevBtn, NextBtn} from './App.styles';
 
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader

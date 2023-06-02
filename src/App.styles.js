@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 import dt1 from './assets/img/others/detalhe-fundo.png';
-import Pix from './assets/icon/pix.svg';
-import Mastercard from './assets/icon/cc-mastercard.svg';
-import Visa from './assets/icon/cc-visa.svg';
+// import Pix from './assets/icon/pix.svg';
+// import Mastercard from './assets/icon/cc-mastercard.svg';
+// import Visa from './assets/icon/cc-visa.svg';
 // import bgd1 from './assets/img/bgd/fundo-flores-roxas.png';
 
 // background: url(${bgd2}) no-repeat;
