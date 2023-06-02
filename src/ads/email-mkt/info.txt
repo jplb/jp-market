@@ -1,8 +1,12 @@
 CORES:
 
-cabeçalho -> cinza do logo/preto ou roxo suave
+body -> #fff
 
-rodapé -> roxo suave ou cinza do logo
+table -> #eaeaf6 (lavanda 25% dessaturado) ou #f8f8ff (branco fantasma) 
+
+header -> cinza do logo/preto ou roxo suave
+
+footer -> roxo suave ou cinza do logo
 
 
 
