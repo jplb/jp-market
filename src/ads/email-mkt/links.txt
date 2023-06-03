@@ -1,4 +1,4 @@
-icons:
+logos:
 
 https://imgcloud.com.br/  - 02/06/2023
 
@@ -6,3 +6,13 @@ insta   - https://imgcloud.com.br/share/sKjZf35BLABxzYPZ
 fb      - https://imgcloud.com.br/share/YllmUf9KuQgkUwRZ
 tt      - https://imgcloud.com.br/share/h09f2KiaSx332O9E
 yt      - https://imgcloud.com.br/share/O2n8IaH272HF1pqn
+
+produtos:
+
+base      -  https://imgcloud.com.br/share/wv12pO3sURq6LHYV
+bepantriz -  https://imgcloud.com.br/share/jENLWVt9IuyYSaOK
+nivea blz -  https://imgcloud.com.br/share/1QVDKaplSgDBIOdd
+good girl -  https://imgcloud.com.br/share/tEZWYKSqpmpYf2hr
+phebo     -  https://imgcloud.com.br/share/iFet510aFkKPLIfH
+ps facial -  https://imgcloud.com.br/share/XjzpjA5gjSOK7u8Z
+

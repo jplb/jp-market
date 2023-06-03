@@ -1,18 +1,3 @@
-CORES:
-
-body -> #fff
-
-table -> #eaeaf6 (lavanda 25% dessaturado) ou #f8f8ff (branco fantasma) 
-
-header -> cinza do logo/preto ou roxo suave escuro
-
-logomarca -> preto/quantum, cinza do logo web, branco (#fff) ou roxo do dpto web (#9400d3f7)
-
-footer -> roxo suave/vivo claro (#8b7dbe, ) ou cinza do logo web
-
-
-
-
 ***NOTAS IMPORTANTES!!!!
 
 *SOBRE IMAGENS:
