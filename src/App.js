@@ -2,9 +2,6 @@ import {useRef} from 'react';
 
 import { Container, Dpto, Logo, Decoracao1, Decoracao2, TextoDpto, DetalhesProduto, Carrossel, Produto, ImgProduto,  OpcoesPgto, BlocoParcelas, BlocoJuros, CaixaAlta, Legenda, CondicoesPgto, ValorAVista, DescontoPix, Bandeiras, Unidades, TituloUnidades, LinkUnidade, Rodape, LogoRodape, TextoRodape, BtnArea, PrevBtn, NextBtn} from './App.styles';
 
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
-
 import img1 from './assets/img/base-da-virginia.png';
 
 import img2 from './assets/img/bepantriz-derma.png';
@@ -51,6 +48,7 @@ function App() {
       precoJurosDec: 99,
       parcela: 10,
       parcelaJuros: 15,
+      link: 'https://imgcloud.com.br/share/wv12pO3sURq6LHYV',
     },
     {
       id: 2,
@@ -65,6 +63,7 @@ function App() {
       precoJurosDec: 65,
       parcela: 1,
       parcelaJuros: 2,
+      link: 'https://imgcloud.com.br/share/jENLWVt9IuyYSaOK',
     },
     {
       id: 3,
@@ -79,6 +78,7 @@ function App() {
       precoJurosDec: 30,
       parcela: 1,
       parcelaJuros: 2,
+      link: 'https://imgcloud.com.br/share/1QVDKaplSgDBIOdd',
     },
     {
       id: 4,
@@ -93,6 +93,7 @@ function App() {
       precoJurosDec: 70,
       parcela: 10,
       parcelaJuros: 15,
+      link: 'https://imgcloud.com.br/share/tEZWYKSqpmpYf2hr',
     },
     {
       id: 5,
@@ -107,6 +108,7 @@ function App() {
       precoJurosDec: 90,
       parcela: 10,
       parcelaJuros: 15,
+      link: 'https://imgcloud.com.br/share/iFet510aFkKPLIfH',
     },
     {
       id: 6,
@@ -121,6 +123,7 @@ function App() {
       precoJurosDec: 78,
       parcela: 2,
       parcelaJuros: 4,
+      link: 'https://imgcloud.com.br/share/XjzpjA5gjSOK7u8Z',
     },
   ];
 
@@ -142,7 +145,9 @@ function App() {
           produtos.map((item) => {
             return(
               <Produto key={item.id}>
-          <ImgProduto src={item.foto} alt={item.descricao} />
+                <a href={item.link}>
+                <ImgProduto src={item.foto} alt={item.descricao} />
+                </a>
           <DetalhesProduto>
         <span>
           {item.descricao}<br></br>
@@ -197,8 +202,8 @@ function App() {
         }
       </Carrossel>
       <BtnArea>
-          <PrevBtn onClick={handleLeftClick}><img style={{height: '12px'}} src={leftArrow}/></PrevBtn>
-          <NextBtn onClick={handleRightClick}><img style={{height: '12px'}} src={rightArrow}/></NextBtn>
+          <PrevBtn onClick={handleLeftClick}><img style={{height: '12px'}} src={leftArrow} alt='seta apontando para esquerda, clique para visualizar os itens anteriores' /></PrevBtn>
+          <NextBtn onClick={handleRightClick}><img style={{height: '12px'}} src={rightArrow} alt='seta apontando para direita, clique para visualizar os itens seguintes' /></NextBtn>
         </BtnArea>
       <Decoracao2 />
       <Unidades>

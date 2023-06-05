@@ -1,24 +1,6 @@
 import styled from 'styled-components';
 
 import dt1 from './assets/img/others/detalhe-fundo.png';
-// import Pix from './assets/icon/pix.svg';
-// import Mastercard from './assets/icon/cc-mastercard.svg';
-// import Visa from './assets/icon/cc-visa.svg';
-// import bgd1 from './assets/img/bgd/fundo-flores-roxas.png';
-
-// background: url(${bgd2}) no-repeat;
-// background-size: cover;
-
-// export const PixIcon = styled(Pix)`
-// font-size: 16px;
-// `;
-
-// export const MastercardIcon = styled(Mastercard)`
-// font-size: 16px;
-// `;
-// export const VisaIcon = styled(Visa)`
-// font-size: 16px;
-// `;
 
 export const Container = styled.div`
 display: flex;
@@ -224,7 +206,6 @@ font-weight: 600;
 export const Bandeiras = styled.div`
 display: flex;
 font-size: 12px;
-
 `;
 
 export const Unidades = styled.div`
